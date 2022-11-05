@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AndroidLearn</string>
+    <string name="derslerText">Öğretim Klavuzu</string>
+    <string name="derslericerikText">Dersler Ve Daha Fazlası </string>
+    <string name="elemanlarText">Örnek Projeler </string>
+    <string name="elemanlaricerikText">Kendini Geliştirebileceğin Projeler</string>
+    <string name="testText">Sınavlar</string>
+    <string name="testicerikText">Ne Kadar Geliştiğini Görmeye Ne Dersin</string>
+    <string name="bilgiText">İpuçlar</string>
+    <string name="bilgiicerikText">Yeni Şeyler Öğren</string>
+    <string name="okuText">Başlamadan Önce Okumalısın</string>
+    <string name="derslerBaslik">Dersler</string>
+
+</resources>
