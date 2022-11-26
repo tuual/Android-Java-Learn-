@@ -1,31 +1,31 @@
 package tual.gokmen.androidlearn;
 
+import android.annotation.SuppressLint;
+import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
-import android.hardware.lights.LightState;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.w3c.dom.Text;
-
-import java.time.temporal.Temporal;
 import java.util.List;
 
 public class CardAdapter extends RecyclerView.Adapter<CardAdapter.tanimla> {
 
     Context context;
     List<CardModel> list;
-
     public CardAdapter(Context context, List<CardModel> list) {
         this.context = context;
         this.list = list;
+    }
+
+    public  void setFilteredList(List<CardModel> filteredList){
+        this.list = filteredList;
+        notifyDataSetChanged();
     }
 
     @NonNull
@@ -35,17 +35,23 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.tanimla> {
         return new tanimla(view);
     }
 
-    private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent intent = new Intent(context,DerslerIcerikActivity.class);
 
-        }
-    };
     @Override
-    public void onBindViewHolder(@NonNull tanimla holder, int position) {
+    public void onBindViewHolder(@NonNull tanimla holder, @SuppressLint("RecyclerView") int position) {
         holder.baslik.setText(list.get(position).getBaslik());
         holder.numara.setText(list.get(position).getNumara());
+        holder.aciklama.setText(list.get(position).getAciklama());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context,DerslerIcerik.class);
+                intent.putExtra("Baslik",list.get(position).getBaslik());
+                intent.putExtra("Aciklama",list.get(position).getAciklama());
+                context.startActivity(intent);
+            }
+        });
+
     }
 
     @Override
@@ -57,12 +63,22 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.tanimla> {
     {
 
 
-        TextView baslik,numara;
+        TextView baslik,numara,aciklama;
 
         public tanimla(@NonNull View itemView) {
             super(itemView);
             baslik = (TextView) itemView.findViewById(R.id.titleTv);
             numara = (TextView) itemView.findViewById(R.id.baslikNumara);
+            aciklama = (TextView) itemView.findViewById(R.id.aciklamaTv);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+
+
+
+                }
+            });
         }
     }
 }

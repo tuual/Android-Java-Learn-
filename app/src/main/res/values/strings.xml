@@ -10,5 +10,8 @@
     <string name="bilgiicerikText">Yeni Şeyler Öğren</string>
     <string name="okuText">Başlamadan Önce Okumalısın</string>
     <string name="derslerBaslik">Dersler</string>
+    <string name="android_studio_ve_software_development_kit_sdk_kurulumu">Android Studio ve Software Development Kit (SDK) Kurulumu</string>
+    <string name="todo">TODO</string>
+
 
 </resources>

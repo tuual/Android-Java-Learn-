@@ -20,12 +20,14 @@
 
 
     <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
-        app:queryHint="Ne Arıyorsun ?"
+        app:queryHint="Dersleri Aramaya Başla "
         android:background="@drawable/searchviewstyle"
-        tools:ignore="MissingClass" />
+        tools:ignore="MissingClass"
+        app:iconifiedByDefault="false"/>
 
     <ScrollView
         android:layout_width="match_parent"
