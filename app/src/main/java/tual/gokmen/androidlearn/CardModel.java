@@ -1,6 +1,7 @@
 package tual.gokmen.androidlearn;
 
 public class CardModel {
+
     String baslik, numara,aciklama;
 
     public CardModel(String baslik, String numara,String aciklama) {

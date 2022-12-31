@@ -1,14 +1,8 @@
 <resources>
-    <string name="app_name">AndroidLearn</string>
-    <string name="derslerText">Öğretim Klavuzu</string>
-    <string name="derslericerikText">Dersler Ve Daha Fazlası </string>
-    <string name="elemanlarText">Örnek Projeler </string>
-    <string name="elemanlaricerikText">Kendini Geliştirebileceğin Projeler</string>
-    <string name="testText">Sınavlar</string>
-    <string name="testicerikText">Ne Kadar Geliştiğini Görmeye Ne Dersin</string>
-    <string name="bilgiText">İpuçlar</string>
-    <string name="bilgiicerikText">Yeni Şeyler Öğren</string>
-    <string name="okuText">Başlamadan Önce Okumalısın</string>
+    <string name="app_name">MEB Android Modül Kitabı</string>
+    <string name="derslerText">MEB Android Java Ders Modül Kitabı</string>
+    <string name="derslericerikText">İlerlemek İçin Ekrana Tıkla ! </string>
+
     <string name="derslerBaslik">Dersler</string>
     <string name="android_studio_ve_software_development_kit_sdk_kurulumu">Android Studio ve Software Development Kit (SDK) Kurulumu</string>
     <string name="todo">TODO</string>

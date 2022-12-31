@@ -1,7 +1,6 @@
 package tual.gokmen.androidlearn;
 
 import android.annotation.SuppressLint;
-import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -18,12 +17,14 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.tanimla> {
 
     Context context;
     List<CardModel> list;
+    tanimla holder;
+
     public CardAdapter(Context context, List<CardModel> list) {
         this.context = context;
         this.list = list;
     }
 
-    public  void setFilteredList(List<CardModel> filteredList){
+    public void setFilteredList(List<CardModel> filteredList) {
         this.list = filteredList;
         notifyDataSetChanged();
     }
@@ -31,7 +32,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.tanimla> {
     @NonNull
     @Override
     public tanimla onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.card_item,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.card_item, parent, false);
         return new tanimla(view);
     }
 
@@ -45,6 +46,9 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.tanimla> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Yazıya ulaşma
+                // context.getString(R.string.aciklama)
+               String id = list.get(position).getNumara();
                 Intent intent = new Intent(context,DerslerIcerik.class);
                 intent.putExtra("Baslik",list.get(position).getBaslik());
                 intent.putExtra("Aciklama",list.get(position).getAciklama());
@@ -54,16 +58,17 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.tanimla> {
 
     }
 
+
+
     @Override
     public int getItemCount() {
         return list.size();
     }
 
-    public class tanimla extends RecyclerView.ViewHolder
-    {
+    public class tanimla extends RecyclerView.ViewHolder {
 
 
-        TextView baslik,numara,aciklama;
+        TextView baslik, numara, aciklama;
 
         public tanimla(@NonNull View itemView) {
             super(itemView);
@@ -73,7 +78,6 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.tanimla> {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
 
 
 
