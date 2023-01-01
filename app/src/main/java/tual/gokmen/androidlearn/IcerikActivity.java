@@ -215,12 +215,7 @@ public class IcerikActivity extends AppCompatActivity{
                         "kullanır. Bu activity için uygun dosyalar otomatik olarak oluşturulur.\n\n" +
                         "• Login Activity (Giriş Activity): Oturum açma mobil uygulaması geliştirmek için kullanılan \n" +
                         "activitydir. E-posta ve şifre girmek için alanlar ile bu alanları onaylamak için düğme bileşen\u0002leri ekranda yer alır. Bu activity için uygun dosyalar otomatik olarak oluşturulur."));
-        list.add(new CardModel(
-                "Activity","1.3.1",
-                " "  ));
-        list.add(new CardModel(
-                "Activity","1.3.1",
-                ""));
+
 
 
 

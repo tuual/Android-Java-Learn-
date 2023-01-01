@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">MEB Android Modül Kitabı</string>
-    <string name="derslerText">MEB Android Java Ders Modül Kitabı</string>
-    <string name="derslericerikText">İlerlemek İçin Ekrana Tıkla ! </string>
+    <string name="app_name">MEB Android Modülü</string>
+    <string name="derslerText">MEB Android Java Ders Modülü</string>
+    <string name="derslericerikText">Modüle Giriş Yapmak İçin Tıkla </string>
 
     <string name="derslerBaslik">Dersler</string>
     <string name="android_studio_ve_software_development_kit_sdk_kurulumu">Android Studio ve Software Development Kit (SDK) Kurulumu</string>

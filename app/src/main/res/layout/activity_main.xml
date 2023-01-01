@@ -25,10 +25,10 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:scaleType="centerCrop"
+            android:scaleType="centerInside"
             android:layout_height="300dp"
             android:layout_margin="10dp"
-            android:src="@drawable/logo2"></ImageView>
+            android:src="@drawable/logo"></ImageView>
 
         <LinearLayout
 
