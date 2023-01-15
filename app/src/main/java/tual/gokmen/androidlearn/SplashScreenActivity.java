@@ -18,7 +18,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(),IcerikActivity.class);
 
         imageView = (ImageView) findViewById(R.id.splashlogo);
         Animation slideanimaton = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.slide);
@@ -32,7 +32,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },4000);
+        },2500);
 
     }
 }

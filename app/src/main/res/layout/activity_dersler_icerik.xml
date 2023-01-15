@@ -19,7 +19,7 @@
         android:orientation="vertical"
         android:layout_height="match_parent">
     <TextView
-        android:background="@drawable/icerikcardstyle"
+        android:background="@drawable/icerikcardstyle2"
         android:padding="10dp"
         android:id="@+id/dBaslikTv"
         android:layout_width="match_parent"
@@ -31,14 +31,13 @@
         android:textSize="19sp"
         ></TextView>
     <TextView
-        android:background="@drawable/icerikcardstyle"
+        android:background="@drawable/icerikcardstyle3"
         android:padding="10dp"
         android:id="@+id/dIcerikTv"
-
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="YAZİ"
-        android:layout_marginTop="50dp"
         android:textColor="@color/black"
         android:textSize="19sp"></TextView>
     </LinearLayout>
